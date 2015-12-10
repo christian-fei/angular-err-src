@@ -14,8 +14,7 @@ angular.module('app', ['angular-err-src'])
 and in your views you can use it like this:
 
 ```
-input(type="password", ng-model="vm.password", name="password", ng-minlength="vm.passwordMinlength", required)
-input(type="password", ng-model="vm.confirmPassword", name="confirmPassword", equal="vm.password", required)
+img(ng-src="{{vm.image}}", err-src="https://placeholdit.imgix.net/~text?txtsize=33&txt=Preview+currently+unavailable&w=300&h=220")
 ```
 
 # UMD
