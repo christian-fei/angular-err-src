@@ -15,8 +15,9 @@ gulp.task('build', function() {
     .pipe(source('angular-err-src.min.js'))
     .pipe(umd({
       exports: function(file) {return 'AngularErrSrc'},
+      namespace: function(file) {return 'AngularErrSrc'},
     }))
     .pipe(buffer())
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(gulp.dest('dist'))
 })
